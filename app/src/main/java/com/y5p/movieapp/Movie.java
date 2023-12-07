@@ -6,6 +6,9 @@ public class Movie {
     @SerializedName("id") // Tambahan: ID film dari server
     private int id;
 
+    @SerializedName("backdrop_path")
+    private String background;
+
     @SerializedName("title")
     private String title;
 
@@ -22,13 +25,14 @@ public class Movie {
     private String posterPath;
 
     // Constructor with parameters
-    public Movie(int id, String title, String description, String releaseDate, String genres, String posterPath) {
+    public Movie(int id, String title, String description, String releaseDate, String genres, String posterPath, String background) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.releaseDate = releaseDate;
         this.genres = genres;
         this.posterPath = posterPath;
+        this.background = background;
     }
 
     // Getter for ID
@@ -60,5 +64,9 @@ public class Movie {
 
     public String getImageUrl() {
         return "https://image.tmdb.org/t/p/w185/" + posterPath;
+    }
+
+    public String getBackground() {
+        return "https://image.tmdb.org/t/p/original/"+background;
     }
 }

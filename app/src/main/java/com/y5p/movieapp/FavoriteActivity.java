@@ -131,7 +131,7 @@ public class FavoriteActivity extends AppCompatActivity {
                             for (Movie movie : response.body().getMovies()) {
                                 if(FavoriteID.isFavoriteMovieIdExist(FavoriteActivity.this, movie.getId())){
 //                                    System.out.println(movie.getTitle()+"    "+movie.getDescription()+"    "+movie.getReleaseDate()+"    "+movie.getGenres()+"    "+movie.getPosterPath());
-                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath()));
+                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath(),movie.getBackground()));
                                     System.out.println(movie.getId());
                                 }
                             }
@@ -159,7 +159,7 @@ public class FavoriteActivity extends AppCompatActivity {
                             for (Movie movie : response.body().getMovies()) {
                                 if(FavoriteID.isFavoriteMovieIdExist(FavoriteActivity.this, movie.getId())){
 //                                    System.out.println(movie.getTitle()+"    "+movie.getDescription()+"    "+movie.getReleaseDate()+"    "+movie.getGenres()+"    "+movie.getPosterPath());
-                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath()));
+                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath(),movie.getBackground()));
                                     System.out.println(movie.getId());
                                 }
                             }
@@ -192,7 +192,7 @@ public class FavoriteActivity extends AppCompatActivity {
                                 if(movie.getTitle().toLowerCase().contains(search.toLowerCase())){
                                     if(FavoriteID.isFavoriteMovieIdExist(FavoriteActivity.this, movie.getId())) {
 //                                    System.out.println(movie.getTitle()+"    "+movie.getDescription()+"    "+movie.getReleaseDate()+"    "+movie.getGenres()+"    "+movie.getPosterPath());
-                                        movies.add(new Movie(movie.getId(), movie.getTitle(), movie.getDescription(), movie.getReleaseDate(), movie.getGenres(), movie.getPosterPath()));
+                                        movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath(),movie.getBackground()));
                                         System.out.println(movie.getId());
                                     }
                                 }
@@ -222,7 +222,7 @@ public class FavoriteActivity extends AppCompatActivity {
                                 if(movie.getTitle().toLowerCase().contains(search.toLowerCase())){
                                     if(FavoriteID.isFavoriteMovieIdExist(FavoriteActivity.this, movie.getId())) {
 //                                    System.out.println(movie.getTitle()+"    "+movie.getDescription()+"    "+movie.getReleaseDate()+"    "+movie.getGenres()+"    "+movie.getPosterPath());
-                                        movies.add(new Movie(movie.getId(), movie.getTitle(), movie.getDescription(), movie.getReleaseDate(), movie.getGenres(), movie.getPosterPath()));
+                                        movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath(),movie.getBackground()));
                                         System.out.println(movie.getId());
                                     }
                                 }

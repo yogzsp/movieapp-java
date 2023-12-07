@@ -153,7 +153,7 @@ public class SearchActivity extends AppCompatActivity {
                             for (Movie movie : response.body().getMovies()) {
                                 if(movie.getTitle().toLowerCase().contains(search.toLowerCase())){
 //                                    System.out.println(movie.getTitle()+"    "+movie.getDescription()+"    "+movie.getReleaseDate()+"    "+movie.getGenres()+"    "+movie.getPosterPath());
-                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath()));
+                                    movies.add(new Movie(movie.getId(),movie.getTitle(),movie.getDescription(),movie.getReleaseDate(),movie.getGenres(),movie.getPosterPath(),movie.getBackground()));
                                     System.out.println(movie.getTitle());
                                 }
                             }
