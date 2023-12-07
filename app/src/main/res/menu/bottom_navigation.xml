@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homebar"
+        android:title="Now Playing"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/comingbar"
+        android:title="Coming Soon"
+        android:icon="@drawable/ic_date"/>
+    <item
+        android:id="@+id/favoritebar"
+        android:title="Favorite"
+        android:icon="@drawable/ic_love"/>
+    <item
+        android:id="@+id/searchbar"
+        android:title="Cari"
+        android:icon="@drawable/ic_search"/>
+
+</menu>
